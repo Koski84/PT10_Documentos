@@ -4,4 +4,4 @@
 
 * Instalacion.pdf: Guía de instalacion de la solucion desarrollada.
 
-* PT10.postman_collection.json: Coleccion de postman que atacaa los diferentes endpoints de la solucion.
+* PT10.postman_collection.json: Coleccion de postman que ataca los diferentes endpoints de la solucion.
