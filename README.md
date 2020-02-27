@@ -6,7 +6,6 @@
 
 * PT10.postman_collection.json: Colección de postman que ataca los diferentes endpoints de la solución.
 
-
 Repositorios github solución:
 * https://github.com/Koski84/ScoringService
 * https://github.com/Koski84/CommandService
