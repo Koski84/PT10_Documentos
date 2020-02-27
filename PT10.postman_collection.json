@@ -1,0 +1,798 @@
+{
+	"info": {
+		"_postman_id": "71763181-4fd7-452d-b158-79c92099fc73",
+		"name": "PT10",
+		"description": "Colección de endpoints de los servicios desarrollados para la prueba técnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ScoreService",
+			"item": [
+				{
+					"name": "Puntuación vehículo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"Ocasión!. Nuevo Audi a3\",\r\n    \"km\":\"0\",\r\n    \"fabricant\":\"Audi\",\r\n    \"type\":\"VEHICULO\",\r\n    \"images\":[\r\n      {\r\n        \"url\":\"https://lh3.googleusercontent.com/V3r1ufJ12GoxxqfiS7KOVOKj08Zbc6URkdHUK6N_kSyLAX1RE4z2URDga0w99jo5sKRPuKS70YvXHFDAHfEb6K1HVvsZ8NnOjyFT-Xhw\",\r\n        \"quality\":\"SD\"\r\n      },\r\n      {\r\n        \"url\":\"https://lh3.googleusercontent.com/jkguSbkaV4tkU3OEvKo5ebAhX9_rAoSwxwU2g3pS5v8winD3Mnl8ZT4WYThAwqOvjm8h2RO_EG57z6Yfbv-Ek_NdWULEdD7OqCkYCdOANQ\",\r\n        \"quality\":\"HD\"\r\n      },\r\n      {\r\n        \"url\":\"https://lh3.googleusercontent.com/LeSa57xyAqiF_IlnidwRIXoNrN9j-nB0Xoe_L3iCsVsfleMc-q0aKLGzYznYXqRh_hwj8wmnQDQt99IEUGoCTnKhhCvc_R-Dz9Iz00M9BA\",\r\n        \"quality\":\"HD\"\r\n      }\r\n    ]\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9010/score",
+							"host": [
+								"localhost"
+							],
+							"port": "9010",
+							"path": [
+								"score"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Puntuación piso",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"Pisazo\",\r\n    \"size\":115,\r\n    \"type\":\"PISO\",\r\n    \"images\":[\r\n\t  {\r\n\t    \"url\":\"https://lh3.googleusercontent.com/rGJ18bTK_00_GhL77Y1UAp0evMTdXKp4jCpz4RZLRu9X-dPSFCjZRdvnvm7lp281Yxr4JH-Dw0Px4Q84Xg-I24seLKr__bXmmsFzl8lQ\",\r\n\t    \"quality\":\"SD\"\r\n\t  },\r\n\t  {\r\n\t    \"url\":\"https://lh3.googleusercontent.com/LeSa57xyAqiF_IlnidwRIXoNrN9j-nB0Xoe_L3iCsVsfleMc-q0aKLGzYznYXqRh_hwj8wmnQDQt99IEUGoCTnKhhCvc_R-Dz9Iz00M9BA\",\r\n\t    \"quality\":\"HD\"\r\n\t  }\r\n\t]\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9010/score",
+							"host": [
+								"localhost"
+							],
+							"port": "9010",
+							"path": [
+								"score"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Puntuación chalet",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"description\":\"Me lo quitan de las manos!\",\r\n    \"type\":\"CHALET\",\r\n    \"images\":[\r\n\r\n    ]\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9010/score",
+							"host": [
+								"localhost"
+							],
+							"port": "9010",
+							"path": [
+								"score"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Puntuación frigorífico",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"Frigorífico Teka\",\r\n    \"type\":\"FRIGORIFICO\",\r\n    \"images\":[\r\n\t  {\r\n\t    \"url\":\"https://lh3.googleusercontent.com/V3r1ufJ12GoxxqfiS7KOVOKj08Zbc6URkdHUK6N_kSyLAX1RE4z2URDga0w99jo5sKRPuKS70YvXHFDAHfEb6K1HVvsZ8NnOjyFT-Xhw\",\r\n\t    \"quality\":\"SD\"\r\n\t  },\r\n      {\r\n\t    \"url\":\"https://lh3.googleusercontent.com/F55IPfWuPQIFB47ku6jszZuXn9JXAN-ZdkRhTBPqdV9lQNPaMBKUpp-mp8U-AGaHqk66Wy6Vss8-Dhg6DfLLHmpp1fVkpNWKryJDEzwI\",\r\n\t    \"quality\":\"SD\"\r\n\t  }\t\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9010/score",
+							"host": [
+								"localhost"
+							],
+							"port": "9010",
+							"path": [
+								"score"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request sin anuncio",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9010/score",
+							"host": [
+								"localhost"
+							],
+							"port": "9010",
+							"path": [
+								"score"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Servicio de puntuación de anuncios",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a802d5d0-5be3-4432-b96a-3ece5914ae1e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "2049617c-93dc-4db9-81dc-2fb3bd074c48",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "QueryService",
+			"item": [
+				{
+					"name": "Obtención de anuncios sin parámetros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9020/adverts",
+							"host": [
+								"localhost"
+							],
+							"port": "9020",
+							"path": [
+								"adverts"
+							]
+						},
+						"description": "Petición de anuncios sin parámetros.\n\nPor defecto devuelve tan solo 10 registros (page=0&limit=10)."
+					},
+					"response": []
+				},
+				{
+					"name": "Petición de visitante comprador",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9020/adverts?sortBy=-score&minScore=40",
+							"host": [
+								"localhost"
+							],
+							"port": "9020",
+							"path": [
+								"adverts"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "-score"
+								},
+								{
+									"key": "minScore",
+									"value": "40"
+								}
+							]
+						},
+						"description": "Petición de anuncios sin parámetros.\n\nPor defecto devuelve tan solo 10 registros."
+					},
+					"response": []
+				},
+				{
+					"name": "Petición de supervisor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9020/adverts?maxScore=39",
+							"host": [
+								"localhost"
+							],
+							"port": "9020",
+							"path": [
+								"adverts"
+							],
+							"query": [
+								{
+									"key": "maxScore",
+									"value": "39"
+								}
+							]
+						},
+						"description": "Petición de anuncios sin parámetros.\n\nPor defecto devuelve tan solo 10 registros."
+					},
+					"response": []
+				},
+				{
+					"name": "Todos los anuncios - Page 1 - Limit 5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9020/adverts?page=0&limit=5",
+							"host": [
+								"localhost"
+							],
+							"port": "9020",
+							"path": [
+								"adverts"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						},
+						"description": "Petición de anuncios sin parámetros.\n\nPor defecto devuelve tan solo 10 registros."
+					},
+					"response": []
+				},
+				{
+					"name": "Todos los anuncios - Page 2 - Limit 5 Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9020/adverts?page=1&limit=5",
+							"host": [
+								"localhost"
+							],
+							"port": "9020",
+							"path": [
+								"adverts"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Servicio de obtención de anuncios e imagenes",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "60778171-774d-4f29-83a5-379a2f2f3617",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "5c9fe369-2c33-4681-87be-e2d90e24b2b0",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "CommandService",
+			"item": [
+				{
+					"name": "Inserción anuncio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Una vivienda enorme, preparada para tener muchos animales en casa: gallinas, rinocerontes, aguilas y monos-araña.\",\r\n  \"type\": \"CHALET\",\r\n  \"images\": [\r\n  {\r\n    \"url\": \"https://lh3.googleusercontent.com/LeSa57xyAqiF_IlnidwRIXoNrN9j-nB0Xoe_L3iCsVsfleMc-q0aKLGzYznYXqRh_hwj8wmnQDQt99IEUGoCTnKhhCvc_R-Dz9Iz00M9BA\",\r\n    \"quality\": \"HD\"\r\n  },\r\n  {\r\n    \"url\": \"https://lh3.googleusercontent.com/LeSa57xyAqiF_IlnidwRIXoNrN9j-nB0Xoe_L3iCsVsfleMc-q0aKLGzYznYXqRh_hwj8wmnQDQt99IEUGoCTnKhhCvc_R-Dz9Iz00M9BA\",\r\n    \"quality\": \"HD\"\r\n  },\r\n  {\r\n    \"url\": \"https://lh3.googleusercontent.com/LeSa57xyAqiF_IlnidwRIXoNrN9j-nB0Xoe_L3iCsVsfleMc-q0aKLGzYznYXqRh_hwj8wmnQDQt99IEUGoCTnKhhCvc_R-Dz9Iz00M9BA\",\r\n    \"quality\": \"HD\"\r\n  }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/advert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserción anuncio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Zona muy tranquila. Ocasión\",\r\n  \"size\": 150,\r\n  \"type\": \"CHALET\",\r\n  \"images\": [\r\n      {\r\n          \"url\": \"https://lh3.googleusercontent.com/jkguSbkaV4tkU3OEvKo5ebAhX9_rAoSwxwU2g3pS5v8winD3Mnl8ZT4WYThAwqOvjm8h2RO_EG57z6Yfbv-Ek_NdWULEdD7OqCkYCdOANQ\",\r\n          \"quality\": \"SD\"\r\n      }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/advert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserción anuncio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Recien reformado, parece nuevo. Preinstalación de aire y fibra óptica\",\r\n  \"type\": \"PISO\",\r\n  \"size\": 140,\r\n  \"images\": [\r\n      {\r\n          \"url\": \"https://lh3.googleusercontent.com/LeSa57xyAqiF_IlnidwRIXoNrN9j-nB0Xoe_L3iCsVsfleMc-q0aKLGzYznYXqRh_hwj8wmnQDQt99IEUGoCTnKhhCvc_R-Dz9Iz00M9BA\",\r\n          \"quality\": \"HD\"\r\n      }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/advert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserción anuncio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Ático con vistas a la playa. Increible!\",\r\n  \"size\": 90,\r\n  \"type\": \"PISO\",\r\n  \"images\": [\r\n      {\r\n          \"url\": \"https://lh3.googleusercontent.com/BsxXJrp7yIPs5lS_jvQMGitJcTCeMF9EDf-Yhm-Nf9ZH3uZD-zN8y4aZNsz5WnyMJHn34nasVuE32GDas8Z1TjS9-fnu3mCRss9nwdE\",\r\n          \"quality\": \"HD\"\r\n      },\r\n      {\r\n        \"url\": \"https://lh3.googleusercontent.com/BsxXJrp7yIPs5lS_jvQMGitJcTCeMF9EDf-Yhm-Nf9ZH3uZD-zN8y4aZNsz5WnyMJHn34nasVuE32GDas8Z1TjS9-fnu3mCRss9nwdE\",\r\n        \"quality\": \"HD\"\r\n      },\r\n      {\r\n        \"url\": \"https://lh3.googleusercontent.com/BsxXJrp7yIPs5lS_jvQMGitJcTCeMF9EDf-Yhm-Nf9ZH3uZD-zN8y4aZNsz5WnyMJHn34nasVuE32GDas8Z1TjS9-fnu3mCRss9nwdE\",\r\n        \"quality\": \"HD\"\r\n      }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/advert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserción anuncio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Pisazo, planta 20 sin ascensor\",\r\n  \"size\": 110,\r\n  \"type\": \"PISO\",\r\n  \"images\": [\r\n      {\r\n          \"url\": \"https://lh3.googleusercontent.com/rGJ18bTK_00_GhL77Y1UAp0evMTdXKp4jCpz4RZLRu9X-dPSFCjZRdvnvm7lp281Yxr4JH-Dw0Px4Q84Xg-I24seLKr__bXmmsFzl8lQ\",\r\n          \"quality\": \"HD\"\r\n      },\r\n      {\r\n          \"url\": \"https://lh3.googleusercontent.com/LeSa57xyAqiF_IlnidwRIXoNrN9j-nB0Xoe_L3iCsVsfleMc-q0aKLGzYznYXqRh_hwj8wmnQDQt99IEUGoCTnKhhCvc_R-Dz9Iz00M9BA\",\r\n          \"quality\": \"HD\"\r\n      }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/advert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserción anuncio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Fabuloso chalet con excepcionales vistas a la montaña\",\r\n  \"size\": 290,\r\n  \"type\": \"CHALET\",\r\n  \"images\": [\r\n      {\r\n          \"url\": \"https://lh3.googleusercontent.com/V3r1ufJ12GoxxqfiS7KOVOKj08Zbc6URkdHUK6N_kSyLAX1RE4z2URDga0w99jo5sKRPuKS70YvXHFDAHfEb6K1HVvsZ8NnOjyFT-Xhw\",\r\n          \"quality\": \"HD\"\r\n      },\r\n      {\r\n          \"url\": \"https://lh3.googleusercontent.com/LqR6QuhSSiOwlPrKITL9AEyG2gqAPYo7SFEkyGTD9E5Tr_oTYhUsM7hwIpVxCAh1ZUcAsJcaDB4hzixnhA1H-_NdGYif5CMl1f8DliZX4A\",\r\n          \"quality\": \"HD\"\r\n      },\r\n      {\r\n        \"url\": \"https://lh3.googleusercontent.com/LqR6QuhSSiOwlPrKITL9AEyG2gqAPYo7SFEkyGTD9E5Tr_oTYhUsM7hwIpVxCAh1ZUcAsJcaDB4hzixnhA1H-_NdGYif5CMl1f8DliZX4A\",\r\n        \"quality\": \"HD\"\r\n      }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/advert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserción anuncio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Frigo mini\",\r\n  \"height\": \"60\",\r\n  \"type\": \"FRIGORIFICO\",\r\n  \"images\": [\r\n      {\r\n          \"url\": \"https://lh3.googleusercontent.com/F55IPfWuPQIFB47ku6jszZuXn9JXAN-ZdkRhTBPqdV9lQNPaMBKUpp-mp8U-AGaHqk66Wy6Vss8-Dhg6DfLLHmpp1fVkpNWKryJDEzwI\",\r\n          \"quality\": \"HD\"\r\n      }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/advert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserción anuncio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Vehículo muy cuidado. Veloz y con gran aceleración. 200 Caballos!\",\r\n  \"km\": \"55000\",\r\n  \"color\": \"Rojo\",\r\n  \"fabricant\": \"Porsche\",\r\n  \"type\": \"VEHICULO\",\r\n  \"images\": [\r\n    {\r\n      \"url\": \"https://lh3.googleusercontent.com/F55IPfWuPQIFB47ku6jszZuXn9JXAN-ZdkRhTBPqdV9lQNPaMBKUpp-mp8U-AGaHqk66Wy6Vss8-Dhg6DfLLHmpp1fVkpNWKryJDEzwI\",\r\n      \"quality\": \"SD\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/advert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserción anuncio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Frigorífico amarillo con poco uso y muy cuidado\",\r\n  \"type\": \"FRIGORIFICO\",\r\n  \"images\": [\r\n      {\r\n          \"url\": \"https://lh3.googleusercontent.com/F55IPfWuPQIFB47ku6jszZuXn9JXAN-ZdkRhTBPqdV9lQNPaMBKUpp-mp8U-AGaHqk66Wy6Vss8-Dhg6DfLLHmpp1fVkpNWKryJDEzwI\",\r\n          \"quality\": \"SD\"\r\n      }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/advert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserción anuncio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Enfría mucho, sirve para guardar cadáveres\",\r\n  \"height\": \"180\",\r\n  \"type\": \"FRIGORIFICO\",\r\n  \"images\": [\r\n      {\r\n          \"url\": \"https://lh3.googleusercontent.com/F55IPfWuPQIFB47ku6jszZuXn9JXAN-ZdkRhTBPqdV9lQNPaMBKUpp-mp8U-AGaHqk66Wy6Vss8-Dhg6DfLLHmpp1fVkpNWKryJDEzwI\",\r\n          \"quality\": \"HD\"\r\n      }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/advert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserción anuncio",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Ocasión!. Nuevo Seat Leon\",\r\n  \"km\": \"50\",\r\n  \"fabricant\": \"Seat\",\r\n  \"type\": \"VEHICULO\",\r\n  \"images\": [\r\n      {\r\n          \"url\": \"https://lh3.googleusercontent.com/LeSa57xyAqiF_IlnidwRIXoNrN9j-nB0Xoe_L3iCsVsfleMc-q0aKLGzYznYXqRh_hwj8wmnQDQt99IEUGoCTnKhhCvc_R-Dz9Iz00M9BA\",\r\n          \"quality\": \"HD\"\r\n      }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9040/advert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9040",
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "servicio de inserción de anuncios",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "581ec18d-951f-470e-b21b-dc9982cd055f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "67c5d1d5-81ce-438b-8a06-fd062640a6a2",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
